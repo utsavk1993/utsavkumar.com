@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from "react";
-import Style from "./BaseLayout.module.scss";
-import Navbar from "./Navbar";
-import { useLocation } from "react-router-dom";
-import { Box, Grid } from "@mui/material";
-import MultiPageRoutes from "./MultiPageRoutes";
-import { singlePage } from "../info/Info";
-import SinglePageRoutes from "./SinglePageRoutes";
-import useScrollObserver from "../hooks/useScrollObserver";
+import React, { useEffect, useState } from 'react';
+import Style from './BaseLayout.module.scss';
+import Navbar from './Navbar';
+import { useLocation } from 'react-router-dom';
+import { Box, Grid } from '@mui/material';
+import MultiPageRoutes from './MultiPageRoutes';
+import { singlePage } from '../info/Info';
+import SinglePageRoutes from './SinglePageRoutes';
+import useScrollObserver from '../hooks/useScrollObserver';
 
 export default function BaseLayout() {
   const location = useLocation();
 
   const [active, setActive] = useState(
-    location.pathname === "/"
-      ? "home"
+    location.pathname === '/'
+      ? 'home'
       : location.pathname.slice(1, location.pathname.length),
   );
   const refHome = useScrollObserver(setActive);
@@ -23,17 +23,17 @@ export default function BaseLayout() {
 
   function handleToggleDarkMode() {
     const oppositeOfCurrentDarkMode = !darkMode;
-    localStorage.setItem("darkMode", `${oppositeOfCurrentDarkMode}`);
+    localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
     setDarkMode(oppositeOfCurrentDarkMode);
   }
 
   useEffect(() => {
-    const detectedDarkMode = JSON.parse(localStorage.getItem("darkMode"));
+    const detectedDarkMode = JSON.parse(localStorage.getItem('darkMode'));
 
     if (detectedDarkMode) {
       setDarkMode(detectedDarkMode);
     } else {
-      localStorage.setItem("darkMode", "false");
+      localStorage.setItem('darkMode', 'false');
     }
   }, []);
 
@@ -41,10 +41,10 @@ export default function BaseLayout() {
     <Box className={darkMode ? Style.dark : Style.light}>
       <Grid
         container
-        display={"flex"}
-        flexDirection={"column"}
-        minHeight={"100vh"}
-        justifyContent={"space-between"}
+        display={'flex'}
+        flexDirection={'column'}
+        minHeight={'100vh'}
+        justifyContent={'space-between'}
       >
         <Grid item>
           <Navbar
@@ -63,17 +63,17 @@ export default function BaseLayout() {
         </Grid>
         <Grid item>
           <Box
-            component={"footer"}
-            display={"flex"}
-            flexDirection={"column"}
-            alignItems={"center"}
-            py={"1.5rem"}
+            component={'footer'}
+            display={'flex'}
+            flexDirection={'column'}
+            alignItems={'center'}
+            py={'1.5rem'}
             sx={{ opacity: 0.7 }}
-            width={"100%"}
+            width={'100%'}
           >
             <p>
-              Made with &hearts; by{" "}
-              <a href={"https://utsavkumar.com"}>Utsav Kumar</a>
+              Made with &hearts; by{' '}
+              <a href={'https://utsavkumar.com'}>Utsav Kumar</a>
             </p>
             <p>&copy; 2024</p>
           </Box>

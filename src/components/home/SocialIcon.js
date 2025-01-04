@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function SocialIcon(props) {
   const { link, icon, label } = props;

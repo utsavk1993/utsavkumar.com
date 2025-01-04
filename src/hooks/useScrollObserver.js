@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 /**
  * This hook will take a function, and returns a ref.
@@ -11,7 +11,7 @@ import { useInView } from "react-intersection-observer";
  */
 export default function useScrollObserver(action) {
   const { ref, inView, entry } = useInView({
-    rootMargin: "-50% 0% -50% 0%",
+    rootMargin: '-50% 0% -50% 0%',
   });
   useEffect(() => {
     if (entry && inView) {

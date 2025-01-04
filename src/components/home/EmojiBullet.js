@@ -1,26 +1,26 @@
-import React from "react";
-import { Box } from "@mui/material";
+import React from 'react';
+import { Box, Link } from '@mui/material';
 
 function EmojiBullet(props) {
-  const { emoji, text } = props;
+  const { emoji, text, link } = props;
 
   return (
     <Box
-      component={"li"}
-      fontSize={"1rem"}
+      component={'li'}
+      fontSize={'1rem'}
       lineHeight={1.5}
-      style={{ cursor: "default" }}
+      style={{ cursor: 'default' }}
     >
       <Box
-        component={"span"}
+        component={'span'}
         aria-label="cheese"
         role="img"
-        mr={{ xs: "0.5rem", md: "1rem" }}
-        fontSize={"1.5rem"}
+        mr={{ xs: '0.5rem', md: '1rem' }}
+        fontSize={'1.5rem'}
       >
         {emoji}
-      </Box>{" "}
-      {text}
+      </Box>{' '}
+      {link ? <Link href={link}>{text}</Link> : text}
     </Box>
   );
 }
