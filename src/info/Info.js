@@ -1,9 +1,5 @@
 import self from '../img/self.png';
 import portfolio from '../img/portfolio.png';
-import mock2 from '../img/mock2.png';
-import mock3 from '../img/mock3.png';
-import mock4 from '../img/mock4.png';
-import mock5 from '../img/mock5.png';
 
 // these are the colors that will be used in the gradient on the home page
 export const colors = ['rgb(42, 197, 184)', 'rgb(54, 133, 193)'];

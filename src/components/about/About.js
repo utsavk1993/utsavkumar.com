@@ -3,6 +3,10 @@ import Style from './About.module.scss';
 import Terminal from './Terminal';
 import { Box } from '@mui/material';
 import { info } from '../../info/Info';
+import githubContributions2023 from '../../img/2023_github_contributions.png';
+import githubActivity2023 from '../../img/2023_github_activity_overview.png';
+import githubContributions2024 from '../../img/2024_github_contributions.png';
+import githubActivity2024 from '../../img/2024_github_activity_overview.png';
 
 export default function About({ innerRef }) {
   const firstName = info.firstName.toLowerCase();
@@ -89,6 +93,56 @@ export default function About({ innerRef }) {
     );
   }
 
+  function githubContributions() {
+    return (
+      <>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            {firstName}
+            {info.lastName.toLowerCase()} $
+          </span>{' '}
+          cd contributions
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            contributions <span className={Style.green}>(main)</span> $
+          </span>{' '}
+          ls
+        </p>
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+        >
+          <Box component={'img'} src={githubContributions2023} alt={'githubContributions2023'} />
+        </Box>
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+          backgroundColor={'#0d1117'}
+          justifyItems={'center'}
+          alignItems={'center'}
+        >
+          <Box component={'img'} src={githubActivity2023} alt={'githubActivity2023'} width={'40%'} />
+        </Box>
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+        >
+          <Box component={'img'} src={githubContributions2024} alt={'githubContributions2024'} />
+        </Box>
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+          backgroundColor={'#0d1117'}
+          justifyItems={'center'}
+          alignItems={'center'}
+        >
+          <Box component={'img'} src={githubActivity2024} alt={'githubActivity2024'} width={'40%'} />
+        </Box>
+      </>
+    );
+  }
+
   function miscText() {
     return (
       <>
@@ -130,6 +184,7 @@ export default function About({ innerRef }) {
     >
       <Terminal text={aboutMeText()} />
       <Terminal text={experienceText()} />
+      <Terminal text={githubContributions()} />
       <Terminal text={skillsText()} />
       <Terminal text={miscText()} />
     </Box>
