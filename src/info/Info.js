@@ -1,5 +1,6 @@
 import self from '../img/self.png';
 import portfolio from '../img/portfolio.png';
+import fileExplorer from '../img/file_explorer.png';
 
 // these are the colors that will be used in the gradient on the home page
 export const colors = ['rgb(42, 197, 184)', 'rgb(54, 133, 193)'];
@@ -102,8 +103,14 @@ export const info = {
     {
       title: 'My Portfolio',
       live: 'https://utsavkumar.com',
-      source: 'https://github.com/utsavk1993/utsavkumar.com',
+      source: 'https://github.com/utsavk1993/utsavkumar.com/',
       image: portfolio,
+    },
+    {
+      title: 'File Explorer',
+      live: 'https://file-explorer-gamma-rose.vercel.app/',
+      source: 'https://github.com/utsavk1993/file-explorer',
+      image: fileExplorer,
     },
   ],
 };
