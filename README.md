@@ -31,6 +31,6 @@ This project showcases my skills, experience, and the projects I've worked on as
 
 ## Upcoming
 
-[Enhancements](https://github.com/utsavk1993/utsavkumar.com/labels/enhancement)
+[Explore planned enhancements](https://github.com/utsavk1993/utsavkumar.com/labels/enhancement)
 
 Crafted with ❤️ by Utsav Kumar

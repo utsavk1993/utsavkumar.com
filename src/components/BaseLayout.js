@@ -19,7 +19,7 @@ export default function BaseLayout() {
   const refHome = useScrollObserver(setActive);
   const refAbout = useScrollObserver(setActive);
   const refPortfolio = useScrollObserver(setActive);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   function handleToggleDarkMode() {
     const oppositeOfCurrentDarkMode = !darkMode;

@@ -33,6 +33,11 @@ export const info = {
       text: 'lets get in touch!',
       link: 'mailto:utsavkumar.ca@gmail.com',
     },
+    {
+      emoji: '📥',
+      text: 'download my resume',
+      link: 'https://drive.google.com/file/d/1ISgrOgiIEJ9sDB0HaPjI8MYugRmQZ5G1/view?usp=sharing',
+    },
   ],
   socials: [
     {
