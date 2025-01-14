@@ -25,9 +25,9 @@ This project showcases my skills, experience, and the projects I've worked on as
 - 🛠️ Biome: Blazing-fast code formatting and linting
 - ▲ Vercel: Deploying and hosting high-performance web applications
   
-## Lighthouse Score
+## Speed Insights
 
-![screenshot of perfect lighthouse score](https://user-images.githubusercontent.com/18350557/179609620-847374a6-23e6-4432-b7a8-181d7d9bf026.png)
+![image](https://github.com/user-attachments/assets/31958aa8-dd0d-482c-afc6-c7500930eafe)
 
 ## Upcoming
 
