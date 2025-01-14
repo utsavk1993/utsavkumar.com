@@ -1,6 +1,5 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import me from '../../img/self.png';
 import classNames from 'classnames';
 import EmojiBullet from './EmojiBullet';
 import SocialIcon from './SocialIcon';
@@ -24,7 +23,7 @@ export default function Home({ innerRef }) {
         alt={'image of developer'}
         style={{ background: info.gradient }}
         component={'img'}
-        src={me}
+        src={'/img/self.jpg'}
         width={{ xs: '35vh', md: '40vh' }}
         height={{ xs: '35vh', md: '40vh' }}
         borderRadius={'50%'}
