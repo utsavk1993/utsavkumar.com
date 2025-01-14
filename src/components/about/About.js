@@ -105,11 +105,12 @@ export default function About({ innerRef }) {
           </span>{' '}
           ls
         </p>
-        <Box
-          display={'flex'}
-          flexDirection={'column'}
-        >
-          <Box component={'img'} src={'/img/githubContributions2023.png'} alt={'githubContributions2023'} />
+        <Box display={'flex'} flexDirection={'column'}>
+          <Box
+            component={'img'}
+            src={'/img/githubContributions2023.png'}
+            alt={'githubContributions2023'}
+          />
         </Box>
         <Box
           display={'flex'}
@@ -120,10 +121,7 @@ export default function About({ innerRef }) {
         >
           {/* <Box component={'img'} src={githubActivity2023} alt={'githubActivity2023'} width={'40%'} /> */}
         </Box>
-        <Box
-          display={'flex'}
-          flexDirection={'column'}
-        >
+        <Box display={'flex'} flexDirection={'column'}>
           {/* <Box component={'img'} src={githubContributions2024} alt={'githubContributions2024'} /> */}
         </Box>
         <Box

@@ -106,12 +106,23 @@ export const info = {
       live: 'https://utsavkumar.com',
       source: 'https://github.com/utsavk1993/utsavkumar.com/',
       image: '/img/portfolio.png',
+      description:
+        'A personal portfolio website built with React and TypeScript',
     },
     {
       title: 'File Explorer',
       live: 'https://file-explorer-gamma-rose.vercel.app/',
       source: 'https://github.com/utsavk1993/file-explorer',
       image: '/img/file_explorer.png',
+      description: 'A UI to explore a file system built in Vanilla JS',
+    },
+    {
+      title: 'Break Buddy',
+      // live: 'https://file-explorer-gamma-rose.vercel.app/',
+      source: 'https://github.com/utsavk1993/break-buddy',
+      image: '/img/break_buddy.png',
+      description:
+        'A simple Chrome Extention that reminds you to take breaks (submitted to chrome web store)',
     },
   ],
 };
