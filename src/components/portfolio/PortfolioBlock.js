@@ -1,6 +1,6 @@
 import React from 'react';
 import IconLink from './IconLink';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Chip } from '@mui/material';
 
 function PortfolioBlock(props) {
   const { image, live, source, title, description } = props;
@@ -20,6 +20,11 @@ function PortfolioBlock(props) {
       >
         {description}
       </Typography>
+      <Box display={'flex'} flexWrap={'wrap'} gap={'0.5rem'} p={1}>
+        {props.tech.map((tech, index) => (
+          <Chip key={index} label={tech} color='primary' />
+        ))}
+      </Box>
       <Box
         className={'portfolio'}
         display={'flex'}
