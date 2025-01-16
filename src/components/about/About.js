@@ -108,8 +108,8 @@ export default function About({ innerRef }) {
         <Box display={'flex'} flexDirection={'column'}>
           <Box
             component={'img'}
-            src={'/img/githubContributions2023.png'}
-            alt={'githubContributions2023'}
+            src={'/img/2024_github_contributions.png'}
+            alt={'2024_github_contributions'}
           />
         </Box>
         <Box
@@ -119,7 +119,7 @@ export default function About({ innerRef }) {
           justifyItems={'center'}
           alignItems={'center'}
         >
-          {/* <Box component={'img'} src={githubActivity2023} alt={'githubActivity2023'} width={'40%'} /> */}
+          <Box component={'img'} src={'/img/2024_github_activity_overview.png'} alt={'2024_github_activity_overview'} width={'40%'} />
         </Box>
         <Box display={'flex'} flexDirection={'column'}>
           {/* <Box component={'img'} src={githubContributions2024} alt={'githubContributions2024'} /> */}
