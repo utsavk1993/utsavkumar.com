@@ -27,11 +27,11 @@ const links = [
     to: 'projects',
     active: 'projects',
   },
-  {
-    name: 'Recommendations',
-    to: 'recommendations',
-    active: 'recommendations',
-  },
+  // {
+  //   name: 'Recommendations',
+  //   to: 'recommendations',
+  //   active: 'recommendations',
+  // },
 ];
 
 // This function is used to create a scroll offset to compensate for the navbar
